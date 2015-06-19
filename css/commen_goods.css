@@ -1,0 +1,207 @@
+#plist, #plist .list-h {
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+#plist, #plist .list-h {
+    overflow: visible;
+    position: relative;
+    z-index: 2;
+}
+#plist.prebuy .list-h li {
+    padding: 0;
+    position: relative;
+    width: 200px;
+    height: 230px;
+    float: left;
+    margin-top: 30px;
+}
+
+#plist.prebuy .list-h li .lh-wrap {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    left: 0;
+    padding: 1px 11px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+#plist.prebuy .list-h li .lh-wrap .extra a {
+    color: #176fcc;
+    display: block;
+    margin: 5px 0;
+}
+#plist .img-center {
+    height: 100px;
+    width: 180px;
+}
+#plist .img-center img {
+    max-height: 100px;
+    max-width: 180px;
+    vertical-align: middle;
+}
+.p-name {
+    height: 3em;
+    word-wrap: break-word;
+}
+.p-name a:hover {
+	color: #176fcc;
+	text-decoration: underline;
+}
+.p-name span {
+	color: #176fcc;
+}
+.p-name, .p-detail {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.p-img, .p-name, .p-price {
+    overflow: hidden;
+}
+
+#plist .btns {
+    height: 24px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+#plist .btn-buy,
+#plist .btns .btn-coll, 
+#plist .btn-compare, 
+#plist .notice-store, 
+#plist-shop .go-shop, 
+#plist .btn-panic-buying {
+    background: -moz-linear-gradient(center top , #f7f7f7, #f2f2f2) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    float: left;
+    height: 19px;
+    line-height: 18px;
+    margin: 0 4px 0 0;
+    padding: 0 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#plist .btn-compare {
+    cursor: pointer;
+    margin-right: 0;
+    padding: 0 5px 0 22px;
+    position: relative;
+}
+
+#plist .btn-compare span {
+    background: url("../img/i-select.png") no-repeat left center;
+    margin-right: 0;
+    position: absolute;
+    top: 0px;
+    left: 5px;
+    width: 17px;
+    height: 17px;
+}
+
+#plist .btn-compare-s-active span {
+    background: url("../img/i-selected.png") no-repeat left center;
+}
+
+/* 分页 */
+#bottom_pager {
+	margin: 20px 0;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 3px;
+    padding: 4px 10px 5px;
+}
+.pagin .prev, .pagin .prev-disabled {
+    padding-left: 12px;
+}
+.pagin .prev-disabled, .pagin .next-disabled {
+    color: #ccc;
+    cursor: default;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 5px;
+    position: relative;
+}
+.pagin a, .pagin span {
+    height: 19px;
+}
+.pagin a, .pagin span {
+    border: 1px solid #ccc;
+    float: left;
+    font-family: arial;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+}
+
+
+.pagin .prev-disabled b {
+    background-position: -80px -608px;
+    left: 3px;
+}
+.pagin b {
+    background-repeat: no-repeat;
+    display: block;
+    height: 9px;
+    overflow: hidden;
+    position: absolute;
+    top: 9px;
+    width: 5px;
+}
+
+
+.pagin .current, .pagin .current:link, .pagin .current:visited {
+    color: #f60;
+    font-weight: 700;
+}
+.pagin .text, .pagin .current {
+    border: 0 none;
+    padding: 4px 11px;
+}
+.pagin a:link, .pagin a:visited {
+    color: #333;
+}
+
+.pagin .next b {
+    background-position: -62px -608px;
+    right: 3px;
+}
+
+.pagin .page-skip {
+    border: 0 none;
+    font-size: 12px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.pagin .page-skip em {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.pagin .jumpto {
+	border: 1px solid #ddd;
+    float: left;
+    text-align: center;
+    width: 36px;
+    height: 26px;
+    margin: 0 5px;
+}
+
+.pagin a.btn-skipsearch, .pagin .btn-skipsearch:hover {
+    color: #333;
+    cursor: pointer;
+    float: left;
+    margin-left: 10px;
+    background: #f7f7f7;
+}

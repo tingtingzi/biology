@@ -1,0 +1,629 @@
+<!DOCTYPE html> 
+<html lang="zh-CN">
+<head>
+	<title>购物车2-生物商城</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+
+	<script type="text/javascript" src="../js/vender/jquery-1.8.2.js"></script>
+	<script type="text/javascript" src="../js/cart.js"></script>
+</head>
+
+<body>
+
+	<div id="header" class="clearfix">
+		<div class="link">
+			<div class="welcom">
+				<div class="info">
+					<span>某某某 , 欢迎来到第一生物商城！</span>
+					<a href="">[退出]</a>
+					<a href="">我的订单</a>
+					<a href="">客户服务</a>
+					<a href="">网站导航</a>
+				</div>
+			</div>
+		</div>
+		<div class="search-box">
+			<a href="index.html" class="logo"></a>
+			<span class="page-name">核对订单信息</span>
+			<ul class="car-nav">
+				<li>成功提交订单</li>
+				<li class="active">填写核对订单信息</li>
+				<li>我的购物车</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="content" class="clearfix">
+		<div class="checkout-steps">
+			<div class="steps-box">
+
+				
+				<div id="step-1" class="step">
+					<div class="step-title">
+						<strong>收货人信息</strong>
+						<a class="update" href="javascript:;">[修改]</a>
+					</div>
+					<div class="step-content">
+						<p><strong>张思源</strong> mail@qq.com</p>
+						<p>北京 朝阳区 三环到四环之间安贞西里一区一号楼106</p>
+					</div>
+				</div>
+				
+				
+				<div id="step-1-show" class="step step-current clearfix">
+					<div class="step-title">
+						<strong>收货人信息</strong>
+						<a class="update" href="javascript:;">[修改]</a>
+					</div>	
+					<div class="step-content">
+						<div id="consignee">	
+							<div class="consignee-list">
+								<div class="item">
+									<input id="consignee_radio_01" class="hookbox" checked="checked"  type="radio" / name="consignee_radio">
+									<label for="consignee_radio_01">
+									<b>张思源</b>
+									  北京朝阳区三环到四环之间安贞西里一区一号楼106   17049373629 
+									</label>
+									<span class="item-action">
+										<a href="javascript:;">编辑</a>
+										<a href="javascript:;">删除</a>
+									</span>
+								</div>
+								<div class="item" index="consignee_index_2">
+									<input class="hookbox" type="radio"  name="consignee_radio" />
+									<label>
+									<b>张思源</b>
+									  北京朝阳区三环到四环之间安贞西里一区一号楼106   17049373629 
+									</label>
+									<span class="item-action hide">
+										<a href="javascript:;">编辑</a>
+										<a href="javascript:;">删除</a>
+									</span>
+								</div>
+								<div id="use-new-address" class="item item-selected">
+									<input class="hookbox" type="radio"  name="consignee_radio" />
+									<label>使用新地址 </label>
+								</div>
+								<form>
+									<div id="consignee-form" class="consignee-form">
+										<div class="list message">
+											<span class="label"><em>*</em>收货人：</span>
+											<div class="field">
+												<input class="textbox" type="text" />
+											</div>
+											<span class="error">请您填写收货人姓名</span>
+										</div>
+										<div id="area_div" class="list select-address message">
+											<span class="label"><em>*</em>所在地区：</span>
+											<div class="field">
+												<span id="span_area">
+													<span id="span_province">
+														<select id="consignee_province" >
+															<option value="">请选择：</option>
+															<option value="1">北京*</option>
+															<option value="2">上海*</option>
+														</select>
+													</span>
+													<span id="span_city">
+														<select id="consignee_city">
+															<option value="">请选择：</option>
+															<option value="78">黄浦区*</option>
+															<option value="2813">徐汇区*</option>
+														</select>
+													</span>
+													<span id="span_county">
+														<select id="consignee_county">
+															<option value="">请选择：</option>
+															<option value="2799">三环以内*</option>
+														</select>
+													</span>
+													<span class="form-tip">
+														<span id="area_div_error" class="error">请您填写完整的地区信息</span>
+														  标“*”的为支持货到付款的地区，
+														  <a href="" target="_blank" class="link">查看货到付款地区</a>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div id="address_div" class="list full-address message">
+											<span class="label"><em>*</em>详细地址：</span>
+											<div class="field">
+												<input  class="textbox" type="text" />
+											</div>
+											<span id="address_div_error" class="error">请您填写收货人详细地址</span>
+										</div>
+										<div class="list message">
+											<span class="label"><em>*</em>手机号码：</span>
+											<div class="phone">
+												<input class="textbox" type="text" />
+											</div>										
+											<span class="label">或  固定电话：</span>
+											<div class="phone">
+												<input class="textbox" type="text" />
+												<span id="phone_div_error" class="error">请您填写收货人手机号码</span>
+											</div>
+										</div>
+										<div id="email_div" class="list message">
+											<span class="label">邮箱：</span>
+											<div class="field">
+												<input class="textbox" type="text" />
+												<span>用来接收订单提醒邮件，便于您及时了解订单状态</span>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="form-btn">
+									<a class="primary-btn" href="javascript:;">保存收货人信息</a>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+
+	            <div id="step-1" class="step invoice-form">
+	                <div class="step-title">
+	                    <strong>收货人信息</strong>
+	                    <span class="step-action">
+	                        <a class="receiver selected" href="javascript:;">[修改]</a>
+	                        <a class="receiver save-receiver" href="javascript:;">[保存收货人信息]</a>
+	                    </span>
+	                </div>
+	                <div class="step-content">
+	                    <div class="address-tab chooose-address selected">
+	                            <p class="has_default"><span>张思源</span> <span>mail@qq.com</span></p>
+	                            <p class="has_default"><span>北京 朝阳区 三环到四环之间安贞西里一区一号楼106</span></p>
+	                            <input type="hidden" name="address_id" value="01" id="id_addressId"/>
+	                           
+	                            <!-- <p>暂无默认收货地址</p> -->
+	                          
+	                    </div>
+	                    <div class="address-tab edit-address">
+	                            <label class="address-label-group address-label"
+	                                   id="address-01"
+	                                   data-url="/aa/bbb/"
+	                                   data-id="02"
+	                                   data-name="张思源"
+	                                   data-state="湖南省"
+	                                   data-city="长沙市"
+	                                   data-region="雨花区"
+	                                   data-mobile="18612345432"
+	                                   data-tel="7989098"
+	                                   data-location="某大厦">
+	                                <input type="radio" checked="checked" name="edit_address"/><strong>收件人：张三</strong>
+	                                <span>联系电话：1212121</span>
+	                                <span>地址：收到减肥的伤口附近</span>
+	                                <div class="func func-active">
+	                                    <a class="update-address" href="javascript: void(0)">修改</a>
+	                                    <a class="delete-address" href="javascript: void(0)">删除</a>
+	                                </div>
+	                            </label>
+	                            <label class="address-label-group address-label"
+	                                   id="address-01"
+	                                   data-url="/aa/bbb/"
+	                                   data-id="02"
+	                                   data-name="张思源"
+	                                   data-state="湖南省"
+	                                   data-city="长沙市"
+	                                   data-region="雨花区"
+	                                   data-mobile="18612345432"
+	                                   data-tel="7989098"
+	                                   data-location="某大厦">
+	                                <input type="radio" name="edit_address"/><strong>收件人：张三</strong>
+	                                <span>联系电话：1212121</span>
+	                                <span>地址：收到减肥的伤口附近</span>
+	                                <div class="func">
+	                                    <a class="update-address" href="javascript: void(0)">修改</a>
+	                                    <a class="delete-address" href="javascript: void(0)">删除</a>
+	                                </div>
+	                            </label>
+	                        <label class="add-address address-label" id="#consignee"><input type="radio" name="edit_address"/><strong>添加新地址</strong></label>
+	                        <div class="add-form" data-action="" data-id="">
+								<form>
+									<div id="consignee-form" class="consignee-form">
+										<div class="list message">
+											<span class="label"><em>*</em>收货人：</span>
+											<div class="field">
+												<input class="textbox" type="text" />
+											</div>
+											<span class="error">请您填写收货人姓名</span>
+										</div>
+										<div id="area_div" class="list select-address message">
+											<span class="label"><em>*</em>所在地区：</span>
+											<div class="field">
+												<span id="span_area">
+													<span id="span_province">
+														<select id="consignee_province" >
+															<option value="">请选择：</option>
+															<option value="1">北京*</option>
+															<option value="2">上海*</option>
+														</select>
+													</span>
+													<span id="span_city">
+														<select id="consignee_city">
+															<option value="">请选择：</option>
+															<option value="78">黄浦区*</option>
+															<option value="2813">徐汇区*</option>
+														</select>
+													</span>
+													<span id="span_county">
+														<select id="consignee_county">
+															<option value="">请选择：</option>
+															<option value="2799">三环以内*</option>
+														</select>
+													</span>
+													<span class="form-tip">
+														<span id="area_div_error" class="error">请您填写完整的地区信息</span>
+														  标“*”的为支持货到付款的地区，
+														  <a href="" target="_blank" class="link">查看货到付款地区</a>
+													</span>
+												</span>
+											</div>
+										</div>
+										<div id="address_div" class="list full-address message">
+											<span class="label"><em>*</em>详细地址：</span>
+											<div class="field">
+												<input  class="textbox" type="text" />
+											</div>
+											<span id="address_div_error" class="error">请您填写收货人详细地址</span>
+										</div>
+										<div class="list message">
+											<span class="label"><em>*</em>手机号码：</span>
+											<div class="phone">
+												<input class="textbox" type="text" />
+											</div>										
+											<span class="label">或  固定电话：</span>
+											<div class="phone">
+												<input class="textbox" type="text" />
+												<span id="phone_div_error" class="error">请您填写收货人手机号码</span>
+											</div>
+										</div>
+										<div id="email_div" class="list message">
+											<span class="label">邮箱：</span>
+											<div class="field">
+												<input class="textbox" type="text" />
+												<span>用来接收订单提醒邮件，便于您及时了解订单状态</span>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="form-btn">
+									<a class="primary-btn" href="javascript:;">保存收货人信息</a>
+								</div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>	 		
+
+				<!-- 此处为选择支付及配送方式 -->
+				<div id="step-2" class="step">
+					<div class="step-title">
+						<strong>支付及配送方式</strong>
+						<a class="update" href="">[修改]</a>
+					</div>
+					<div class="step-content">
+						<p>货到付款</p>
+						<p>普通快递 中小件商品 <span class="tips">预计 12月2日[周日] 送达</span></p>
+					</div>
+				</div>
+							
+				
+<!-- 				<div id="step-2-show" class="step step-current clearfix">
+					<div class="step-title">
+						<strong>支付及配送方式</strong>
+						<a class="update" href="">[修改]</a>
+					</div>	
+					<div class="step-content">
+						<div id="payment-ship">	
+							<div class="payment">		
+								<h3>支付方式</h3>
+								<div class="item item-selected">
+									<input class="hookbox" type="radio" checked="checked" name="payment">
+									<label>
+									<b>在线支付</b>
+									  即时到帐，支持绝大数银行借记卡及部分银行信用卡 <a class="link" target="_blank" href="">查看银行及限额</a>
+									</label>
+								</div>
+								<div class="item">
+									<input class="hookbox" type="radio" / name="payment">
+									<label>
+									<b>公司转账</b>
+									  通过快钱平台转账 转帐后1-3个工作日内到帐 <a  class="link" target="_blank" href="">查看帐户信息</a>
+									</label>
+								</div>
+								<div class="item">
+									<input class="hookbox" type="radio" / name="payment">
+									<label>
+									<b>邮局汇款</b>
+									  通过快钱平台收款 汇款后1-3个工作日内到帐 <a  class="link" target="_blank" href="">查看帐户信息</a>
+									</label>
+								</div>
+							</div>
+							<div class="shipment">
+								<div class="way">
+									<h3>配送方式</h3>
+								</div>	
+
+								<div class="item">
+									<input class="hookbox" type="radio" name="shipment">
+									<label>
+									<b>普通快递</b>
+									  由第三方商家提供物流快递服务
+									</label>
+								</div>
+							</div>
+
+							<div class="form-btn">
+								<a class="primary-btn" href="javascript:;">保存收货及配送方式</a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				
+
+				<div id="step-3" class="step">
+					<div class="step-title">
+						<strong>发票信息</strong>
+						<a class="update" href="">[修改]</a>
+					</div>
+					<div class="step-content">
+						<p>普通发票(纸质)   杭州阿里云科技股份有限公司   明细 </p>
+						<p class="tips">温馨提示：发票的开票金额不包括积分支付部分</p>
+					</div>
+				</div>				
+
+				<!--
+				<div id="step-3-show" class="step step-current clearfix">
+					<div class="step-title">
+						<strong>发票信息</strong>
+						<a class="update" href="">[修改]</a>
+					</div>	
+					<div class="step-content ">
+						<div id="payment-ship">	
+							<div class="invoice-form">		
+								<h3>发票抬头</h3>
+								<div class="item">
+									<input class="hookbox" type="radio" checked="checked" name="payment">
+									<label>
+									<strong>百度时代网络技术（北京）有限公司</strong> 普通发票
+									</label>
+								</div>
+								<div class="item item-selected">
+									<input class="hookbox" type="radio" / name="payment">
+									<label>使用新的发票信息</label>
+								</div>
+								<div class="list clearfix">
+									<span class="label">发票开具方式</span>
+									<div class="field">
+									<ul class="hookbox-list group">
+										<li>
+											<input id="normal-invoice-1" class="hookbox" type="radio" name="invoiceType">
+											<label for="normal-invoice-1">普通发票（纸质）</label>
+										</li>
+										<li>
+											<input id="normal-invoice-2" class="hookbox" type="radio" name="invoiceType">
+											<label for="normal-invoice-2">增值税发票</label>
+										</li>
+									</ul>
+									</div>
+								</div>
+								<div class="list clearfix">
+									<span class="label">发票抬头</span>
+									<div class="field">
+									<ul class="hookbox-list group">
+										<li>
+											<input id="invoice-1" class="hookbox" type="radio" name="invoiceType">
+											<label for="invoice-1">个人</label>
+										</li>
+										<li>
+											<input id="invoice-2" class="hookbox" type="radio" name="invoiceType">
+											<label for="invoice-2">单位</label>
+										</li>
+										<li>
+											<input type="text" />
+										</li>
+									</ul>
+									</div>
+								</div>
+
+							</div>			
+
+							<div class="invoice-form">		
+								<h3>发票内容</h3>
+								<div class="list clearfix">
+									<span class="label">发票抬头</span>
+									<div class="field">
+										<ul class="hookbox-list group">
+										<li>
+											<input id="invoice-type1" class="hookbox" type="radio" name="invoice-type" />
+											<label for="invoice-type1">明细</label>
+										</li>
+										<li>
+											<input id="invoice-type2" class="hookbox" type="radio" name="invoice-type" />
+											<label for="invoice-type2">办公用品</label>
+										</li>
+										<li>
+											<input id="invoice-type3" class="hookbox" type="radio" name="invoice-type" />
+											<label for="invoice-type3">电脑配件</label>
+										</li>
+										<li>
+											<input id="invoice-type4" class="hookbox" type="radio" name="invoice-type" />
+											<label for="invoice-type4">耗材</label>
+										</li>
+									</ul>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="form-btn">
+								<a class="primary-btn" href="javascript:;">保存发票信息</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				-->
+			</div>
+
+			<div id="step-4" class="bag step">
+				<div class="step-title">
+					<strong>商品信息</strong>
+					<a class="return" href="">返回修改购物车</a>
+				</div>
+				<div class="detail-nav clearfix">
+					<div class="goods">商品</div>
+					<div class="provider">经销商</div>
+					<div class="price">价格</div>
+					<div class="favorable">优惠</div>
+					<div class="num">数量</div>
+				</div>
+
+				<div id="goods">
+					<div class="detail">
+						<div class="format goods">
+							<div class="goods-img">
+								<a class="img-center" href=""><img src="../img/trash/product.png"></a>
+							</div>						
+							<div class="goods-detail">
+								<p class="name"><a href="">External Threaded Polypropylene Cryogenic Vial 冻存管</a></p>
+								<p class="try">
+									<span>试用装</span>
+								</p>
+								<p class="number">商品编号：23123123</p>
+							</div>
+						</div>
+						<div class="format provider">
+							<p>
+								<a href="">上海胜创生物生化科技股份有限责任公司</a>
+							</p>
+						</div>	
+						<div class="format price">
+							<p>￥4,003,00</p>
+						</div>
+						<div class="format favorable">
+							<p>￥2.00</p>
+						</div>
+						<div class="format num">
+							<p>×2</p>
+						</div>
+					</div>
+					<div class="detail">
+						<div class="format goods">
+							<div class="goods-img">
+								<a class="img-center" href=""><img src="../img/trash/product.png"></a>
+							</div>						
+							<div class="goods-detail">
+								<p class="name"><a href="">External Threaded Polypropylene Cryogenic Vial 冻存管</a></p>
+								<p class="try">
+									<span>试用装</span>
+								</p>
+								<p class="number">商品编号：23123123</p>
+							</div>
+						</div>
+						<div class="format provider">
+							<p>
+								<a href="">上海胜创生物生化科技股份有限责任公司</a>
+							</p>
+						</div>	
+						<div class="format price">
+							<p>￥4,003,00</p>
+						</div>
+						<div class="format favorable">
+							<p>￥2.00</p>
+						</div>
+						<div class="format num">
+							<p>×2</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="step payoff">
+				<div class="clearfix">
+					<div class="list">
+						<p><span><strong>16</strong> 件商品，总商品金额</span><em>￥9291.00</em></p>
+						<p><span>返现</span><em>￥9291.00</em></p>
+						<p><span>运费</span><em>￥9291.00</em></p>
+						<p><span>应付总额</span><em>￥9291.00</em></p>				
+					</div>
+				</div>
+				<div class="order-coupon">
+					<div class="item">
+						<div class="toggle-title">
+							<a href="javascript:void(0)">
+								<b></b>
+								使用账户余额支付
+							</a>
+						</div>
+
+						<div class="toggle-wrap">
+							<div class="beans">
+								<div class="bs-t">
+									<span>本次使用</span>
+									<input class="bs-num" type="text" value="33" >
+									<span>元余额支付</span>
+									<input id="" class="btn-add" type="button" value="确定使用">
+								</div>
+								<div class="bs-m">
+									<p>您有账户余额为 ￥1410.00元，本次使用<strong>￥33.00</strong>元</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="toggle-title">
+							<a href="javascript:void(0)">
+								<b></b>
+								使用账户积分
+							</a>
+						</div>
+
+						<div class="toggle-wrap">
+							<div class="beans">
+								<div class="bs-t">
+									<span>本次使用</span>
+									<input class="bs-num" type="text" value="33" >
+									<span>积分支付</span>
+									<input id="" class="btn-add" type="button" value="确定使用">
+								</div>
+								<div class="bs-m">
+									<p>您有积分 1410 个，本次可用<strong>33</strong>个</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="total">
+				<a href="">提交订单</a>
+				<strong>￥43423.00</strong>
+				应付总额:
+			</div>	
+			
+		</div>
+	</div>	
+
+	<div id="footer2">
+		<div class="footer copy">
+			<p>
+				<a href="">关于我们</a>
+				<a href="">联系我们</a>
+				<a href="">加入我们</a>
+				<a href="">商城入驻</a>
+				<a href="">广告媒体</a>
+				<a href="">服务报价</a>
+				<a href="">友情链接</a>
+				<a href="">法律声明</a>
+			</p>
+			<p>&copy;2014 第一生物商城 版权所有，并保留所有权利。</p>					
+			<p>Tel: 400-000-1234</p>					
+			<p>ICP备案证书号: 苏ICP备12345678</p>	
+		</div>
+	</div>
+
+</body>
+</html>

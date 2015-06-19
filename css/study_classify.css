@@ -1,0 +1,211 @@
+.crumb {
+    overflow: hidden;
+    padding: 10px 5px;
+}
+.crumb h2 {
+    color: #000;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.artice {
+	width: 380px;
+	float: left;
+	display: inline-block;
+	background: #fff;
+	padding-bottom: 20px;
+}
+.artice .img-center {
+	width: 380px;
+}
+.artice .img-center img{
+	max-width: 380px;
+	text-align: center;
+}
+.artice .special {
+    border-bottom: 2px solid #eee;
+    overflow: hidden;
+    padding: 5px 20px;
+}
+.artice .special span {
+    color: #333;
+    font-weight: bold;
+    text-align: left;
+    font-size: 14px;
+}
+.artice .special a {
+    float: right;
+}
+.artice ul {
+	padding: 0 20px;
+}
+.artice li {
+	margin-top: 20px;
+}
+.artice li a {
+	width: 340px;
+	color: #176fcc;
+	display: block;
+	margin-bottom: 10px;
+	display: block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.artice li a:hover {
+	text-decoration: underline;
+}
+
+
+
+
+.detail {
+	background: #fff;
+	width: 810px;
+	float: right;
+	display: inline-block;
+	padding: 20px 0;
+}
+.detail strong {
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 20px;
+}
+
+/* 文字展开收起 */
+.content-intro {
+	padding: 0 20px;
+	margin-top: 10px;
+	margin-bottom: 30px;	
+    font-size: 14px;
+    line-height: 23.5px;
+}
+.content-intro .open, .content-intro .close {
+	float: right;
+	color: #176fcc;
+    overflow: hidden;
+    font-size: 13px;
+}
+.content-intro i {
+	float: right;
+    margin-left: 4px;
+    margin-top: 7px;
+    width:0; 
+    height:0; 
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;	
+}
+.content-intro .open i {
+    margin-top: 9px;
+    border-top:5px solid #176fcc;   
+}
+.content-intro .close i {
+    border-bottom:5px solid #176fcc;
+}
+
+.detail .title {
+    background: #176fcc;
+    display: inline-block;
+    float: left;
+}
+.detail .title i {
+    background: url("../img/exper-icon.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    float: left;
+    height: 46px;
+    margin-left: -6px;
+    margin-top: -4px;
+    width: 10px;
+}
+.detail .title span {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.detail ul {
+	clear: both;
+	padding: 20px;
+	padding-bottom: 0;
+}
+.detail li {
+	border-bottom: 1px solid #eee;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.detail li img{
+	width: 90px;
+	height: 90px;
+}
+.detail li .fl {
+	width: 80px;
+}
+.detail li .fr {
+	width: 660px;
+}
+.detail li .fr a {
+	color: #176fcc;
+	display: block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	width: 600px;	
+	height: 25px;
+}
+.detail li .fr a:hover {
+	text-decoration: underline;
+}
+.detail li .fr p {
+    line-height: 19px;
+    max-height: 110px;
+    overflow: hidden;
+}
+
+
+
+/* 分页 */
+.bottom_pager {
+	margin: 20px 10px;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 3px;
+    padding: 4px 10px 5px;
+}
+.pagin .prev-disabled, .pagin .next-disabled {
+    color: #ccc;
+    cursor: default;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 5px;
+    position: relative;
+}
+.pagin a, .pagin span {
+    border: 1px solid #ccc;
+    float: left;
+    font-family: arial;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+    color: #176fcc;
+}
+.pagin .current, .pagin .current:link, .pagin .current:visited {
+    color: #f60;
+    font-weight: 700;
+}
+.pagin .text, .pagin .current {
+    border: 0 none;
+    padding: 4px 11px;
+}
+

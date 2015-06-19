@@ -1,0 +1,165 @@
+body {
+	background: #fff;
+}
+
+
+/*  */
+.brand {
+	background: #fffdee;
+	position: relative;
+	margin: 20px 0;
+	border: 1px solid #eee;
+}
+.brand .best {
+	width: 80px;
+	height: 60px;
+	display: block;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: url(../img/best.png) no-repeat;
+}
+.nav-box {
+	font-weight: bold;
+	font-size: 15px;
+	height: 40px;
+	line-height: 40px;
+	overflow: hidden;
+	margin:0 20px;
+	border-bottom: 2px solid #eee;
+}
+.nav-box a {
+	color: #000;
+}
+.nav-box .nav-title {
+	text-align: center;
+}
+.nav-box .nav-title li {
+	position: relative;
+	display: inline-block;
+}
+.nav-box .nav-title li.active {
+	background: url(../img/nav-bg.png) no-repeat bottom;
+}
+.nav-box .nav-title li a {
+	padding: 0 20px;
+}
+
+
+.brand-group {
+	width: 1180px;
+	padding: 0 10px 10px;
+	overflow: hidden;
+}
+.brand-item {
+	width: 1170px;
+	padding: 10px;
+	display: none;
+}
+.brand-item.active {
+	display: block;
+}
+.brand-item li {
+	float: left;
+	display: inline-block;
+	width: 135px;
+	height: 80px;
+	padding: 10px;
+	margin: 0 10px 10px 0;
+	background: #fff;
+	text-align: center;
+	border: 1px solid #eee;
+}
+.brand-item .img-center {
+	width: 150px;
+	height: 65px;
+}
+.brand-item img {
+	max-width: 150px;
+	max-height: 65px;
+	vertical-align: middle;
+}
+.brand-item a {
+	text-align: center;
+}
+.brand-item a:hover {
+	color: #3686db;
+	text-decoration: underline;
+}
+
+.classify-nav {
+	padding:  20px 0;
+}
+.classify-nav li {
+	float: left;
+	margin-right: 10px;
+}
+.classify-nav li .text-center {
+	width: 70px;
+	height: 65px;
+	text-align: center;
+	vertical-align: middle;
+    font-size: 15px;
+	padding: 0 5px;
+	display: table-cell;
+	*display: block;
+	*font-size:175px;/*约为高度的0.873，200*0.873 约为175*/
+	*font-family:Arial;/*防止非utf-8引起的hack失效问题，如gbk编码*/
+	background: url(../img/classify.png) no-repeat top center;
+}
+.classify-nav li .text-center span {
+	vertical-align: middle;
+}
+.classify-nav li.active .text-center{
+	width: 80px;
+	height: 80px;
+	color: #fff;
+	background: url(../img/classify-active.png) no-repeat top center;
+}
+.classify-nav li.active .text-center span {
+	margin-top: -15px;
+	display: block;
+}
+
+
+.classify-content {
+	border: 1px solid #eee;
+}
+.orderby {
+	height: 35px;
+	line-height: 35px;
+	padding: 0 20px;
+	text-align: right;	
+}
+.orderby a {
+	float: right;
+	display: inline-block;
+	color: #176fcc;
+	font-weight: bold;
+	margin-left: 15px;
+}
+.orderby a:hover {
+	text-decoration: underline;
+}
+.orderby span {
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+}
+.order-single {
+	padding: 0px 20px;
+	font-weight: bold;
+	font-size: 20px;
+	color: #176fcc;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	background: #f7f7f7;
+}
+div.classify-content .brand-group {
+	padding-bottom: 0;
+}
+div.classify-content .brand-item {
+	padding-bottom: 0;
+	overflow: hidden;
+	display: block;
+}

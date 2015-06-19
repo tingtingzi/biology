@@ -1,0 +1,235 @@
+body {
+	background: #fff;
+}
+
+/* 各种实验流程页面 */
+.crumb {
+    overflow: hidden;
+    padding: 10px 5px;
+}
+.crumb h2 {
+    color: #000;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.talk-box {
+	margin-bottom: 20px;
+}
+.talk-box .title {
+    border: 1px solid #ddd;
+}
+.talk-box .title h2{
+	font-weight: bold;
+	color: #000;
+	font-size: 15px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	text-align: left;
+	background: #f7f7f7;
+}
+.talk-box .content {
+	border: 1px solid #ddd;
+	border-top: none;
+}
+
+.announce-l {
+	width: 800px;
+	float: left;
+	display: inline-block;
+}
+.announce-r {
+	width: 380px; 
+	float: right;
+	display: inline-block;
+}
+.article {
+	padding: 20px 40px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+
+.article-head h1 {
+	font-weight: bold;
+	font-size: 25px;
+	color: #666;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.article-head p {
+	font-size: 12px;
+	text-align: left;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+.article-content {
+	margin-bottom: 20px;
+	min-height: 200px;
+}
+.share {
+	overflow: hidden;
+}
+.share span {
+	float: left;
+	display: inline-block;
+}
+.share a {
+	float: left;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	background-image: url(../img/share-icon.png);
+	background-repeat: no-repeat;
+}
+.share .sina {
+	background-position: 0 0;
+}
+.share .qq-weibo {
+	background-position: -25px 0;
+}
+.share .qq-kongjian {
+	background-position: -50px 0;
+}
+.share .douban {
+	background-position: -75px 0;
+}
+.share .renren {
+	background-position: -100px 0;
+}
+.share .weixin {
+	background-position: -125px 0;
+}
+
+
+.annouce-box{
+	background: #fff;
+	margin-bottom: 20px;
+}
+.annouce-box .title {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+}
+.annouce-box .title strong {
+	font-weight: bold;
+	color: #000;
+	font-size: 15px;
+	text-align: left;
+}
+.annouce-box .title a {
+	float: right;
+}
+.annouce-box .content {
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 20px;
+}
+.annouce-box .content ul {
+	padding-bottom: 20px;
+}
+.annouce-box .content li {
+	margin-bottom: 5px;
+	overflow: hidden;
+}
+.annouce-box .content p {
+	width: 340px;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	margin-bottom: 5px;
+	display: block;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.annouce-box .content a {
+	color: #176fcc;
+}
+.annouce-box li a:hover {
+	text-decoration: underline;
+}
+
+/* 讨论区 */
+.talk-box table {
+	width: 100%;
+}
+.talk-box table tr {
+	border-bottom: 1px dashed #ccc;
+}
+.talk-box table tr:last-child {
+	border: none;
+}
+.talk-box table th {
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+}
+.talk-box table td {
+	text-align: center;
+	padding: 10px;
+}
+.talk-box table a {
+	color: #176fcc;
+}
+.talk-box table .theme {
+	text-align: left;
+}
+.talk-box table .time {
+	width: 150px;
+}
+.talk-box table .talk-l {
+	float: left;
+	display: inline-block;
+}
+.talk-box table .talk-r {
+	float: right;
+	display: inline-block;
+}
+
+
+/* 分页 */
+.bottom_pager {
+	margin: 20px 10px;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    background: none repeat scroll 0 0 #fff;
+    border-radius: 3px;
+    padding: 4px 10px 5px;
+}
+.pagin .prev-disabled, .pagin .next-disabled {
+    color: #ccc;
+    cursor: default;
+}
+.pagin .prev, .pagin .next, .pagin .prev-disabled, .pagin .next-disabled {
+    height: 18px;
+    line-height: 18px;
+    padding-top: 5px;
+    position: relative;
+}
+.pagin a, .pagin span {
+    border: 1px solid #ccc;
+    float: left;
+    font-family: arial;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 2px;
+    overflow: hidden;
+    padding: 3px 10px;
+    color: #176fcc;
+}
+.pagin .current, .pagin .current:link, .pagin .current:visited {
+    color: #f60;
+    font-weight: 700;
+}
+.pagin .text, .pagin .current {
+    border: 0 none;
+    padding: 4px 11px;
+}

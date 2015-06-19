@@ -1,0 +1,499 @@
+/* 右侧筛选 */
+.right-extra {
+	width: 1000px;
+	float: right;
+	display: inline-block;
+}
+.related-search {
+    height: 25px;
+}
+.related-search a:hover {
+    text-decoration: underline;
+}
+.related-search span, .related-search a{
+    float: left;
+}
+.related-search a {
+    color: #176fcc;
+    padding: 0 8px;
+}
+
+#select .mt {
+    background: #f7f7f7;
+    border: 1px solid #eee;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+#select .mt h1 {
+    color: #176fcc;
+    float: left;
+    height: 30px;
+    font-weight: bold;
+    font-size: 15px;
+}
+#select .mt h1 strong {
+    color: #333;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+
+
+.prop-attrs .f-list li {
+    float: left;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+}
+.prop-attrs .f-list li a {
+    color: #176fcc;
+}
+
+.prop-attrs .f-list li a:hover {
+    color: #e4393c
+}
+#select .mt .total span {
+    color: #999;
+}
+#select .mt .total strong {
+    color: #176fcc;
+    font-weight: 400;
+}
+#select .mc {
+    border: 1px solid #eee;
+    border-bottom: none;
+    overflow: visible;
+}
+
+
+#select .mc > div:first-child .attr {
+    border-top: 0 none;
+}
+.root61 #select .attr {
+    width: 988px;
+}
+.attr {
+    border-top: 1px dotted #ccc;
+    overflow: hidden;
+    padding: 10px 0;
+    width: 1000px;
+}
+
+.attr .a-key {
+    float: left;
+    font-weight: 700;
+    line-height: 25px;
+    width: 80px;
+    margin-left: 10px;
+    padding-left: 10px;
+    background: url(../img/i-right.png) no-repeat left center;
+}
+
+.root61 #select .a-values {
+    width: 765px;
+}
+.selected-c .a-values, .prop-attrs .a-values, .color-attr .a-values, .brand-attr .a-values {
+    float: right;
+    padding-right: 120px;
+    position: relative;
+    width: 780px;
+}
+
+.selected-c .f-list li {
+    border: 1px solid #e6e6e6;
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    margin-right: 15px;
+    padding: 0 20px 0 5px;
+    position: relative;
+}
+
+.attr .a-values .v-option {
+    height: 20px;
+    padding-top: 2px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    width: 105px;
+}
+
+.attr .a-values .o-more {
+    cursor: pointer;
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    padding-right: 14px;
+    position: relative;
+    text-align: right;
+    text-decoration: none;
+    width: 31px;
+}
+
+.attr .a-values .o-more b {
+    background: url("../img/i-blue-down.png") no-repeat;
+    overflow: hidden;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 7px;
+    height: 7px;
+}
+.attr .a-values .o-more.fold b {
+    background: url("../img/i-blue-up.png") no-repeat;
+}
+
+.attr .a-values .o-multiple {
+    background: none repeat scroll 0 0 #f7f7f7;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    float: left;
+    height: 18px;
+    line-height: 18px;
+    padding-left: 16px;
+    position: relative;
+    width: 28px;
+}
+.attr .a-values .o-multiple b {
+    background: url("../img/add.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 8px;
+    left: 5px;
+    position: absolute;
+    top: 5px;
+    width: 8px;
+}
+
+
+.f-list span {
+	float: none;
+	color: #999;
+}
+.selected-c .v-option #all-revocation {
+    color: #176fcc;
+    cursor: pointer;
+    display: block;
+    padding-top: 3px;
+    position: absolute;
+    right: 0;
+}
+.selected-c .f-list li a {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #888;
+    float: none;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 0;
+    white-space: nowrap;
+}
+.selected-c .f-list li strong {
+    color: #176fcc;
+    font-weight: bold;
+}
+
+.selected-c .f-list li b {
+    background: url("../img/delete.png") no-repeat;
+    cursor: pointer;
+    display: block;
+    width: 12px;
+    height: 12px;
+    overflow: hidden;
+    position: absolute;
+    right: 6px;
+    top: 4px;
+}
+.prop-attrs .v-fold {
+    overflow: hidden;
+}
+.prop-attrs .v-fold .f-list {
+    height: 20px;
+    overflow: hidden;
+}
+.prop-attrs div.v-unfold .f-list {
+    height: auto;
+}
+
+
+/* 多选 */
+.attr-select {
+    background: none repeat scroll 0 0 #fffdee;
+    border: 1px solid #edd28b;
+    margin: 0 -1px -1px;
+    position: relative;
+    z-index: 1;
+}
+.attr-select .v-tabs a, .attr-select .f-list a {
+    background: url("../img/i-select.png") left center no-repeat;
+    color: #005aa0;
+    padding-left: 18px;
+}
+.attr-select .v-tabs .selected a, .attr-select .f-list .selected a {
+    background: url("../img/i-selected.png") left center no-repeat;
+}
+.prop-attrs .attr-select ul.f-list {
+    height: auto;
+}
+
+/* 确定 */
+.attr-select .a-values .v-btns {
+    display: block;
+}
+.attr .a-values .v-btns {
+    display: none;
+    padding: 10px 0;
+    text-align: center;
+}
+.attr .a-values .v-btns a {
+    display: inline-block;
+    line-height: 12px;
+    text-decoration: none;
+    padding: 5px 15px 6px;
+}
+.attr .a-values .v-btns .btn-red {
+    color: #fff;
+    margin-right: 5px;
+    background: #176fcc;
+}
+.attr .a-values .v-btns .btn-gray {
+    background: #eee;
+}
+
+/*  价格确定 */
+.prop-attrs #select-price .f-list {
+    width: 620px;
+    float: left;
+}
+.prop-attrs .pr {
+    float: left;
+    width: 150px;
+}
+.prop-attrs .pr .price-range {
+    border: 1px solid #ccc;
+    float: left;
+    font-family: verdana;
+    height: 17px;
+    line-height: 17px;
+    margin: 2px 4px 0 0;
+    padding: 1px;
+    width: 40px;
+}
+.prop-attrs .pr i {
+    background: none repeat scroll 0 0 #ccc;
+    float: left;
+    height: 1px;
+    margin: 12px 4px 0 0;
+    overflow: hidden;
+    width: 4px;
+}
+
+.prop-attrs .pr .btn-price-range {
+    float: left;
+    height: 12px;
+    line-height: 12px;
+    margin-top: 2px;
+    padding: 3px 9px 4px;
+    text-decoration: none;
+}
+.btn-gray {
+    background: -moz-linear-gradient(center top , #f7f7f7, #f2f2f2) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    color: #333;
+    cursor: pointer;
+    margin-top: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+table.f-list {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    border-collapse:collapse;
+    border:1px solid #eee;
+}
+table.f-list tr {
+    
+}
+table.f-list tr td{
+    padding: 5px;
+    border-right:1px solid #eee;
+    border-top:1px solid #eee;
+    text-align: center;
+    word-break: unset;
+}
+table.f-list tr td a{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+table.f-list tr td img{
+    max-width: 40px;
+    max-width: 40px;
+    float: left;
+}
+table.f-list tr td span {
+    float: left;
+}
+
+
+/* 更多选项*/
+.attrs .prop-attrs.hide {
+    display: none;
+}
+#select .mb {
+    border-bottom: 0 none;
+    border-top: 1px solid #e6e6e6;
+    font-size: 0;
+    height: 0;
+    margin-bottom: 34px;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+}
+
+#select .mb .attr-extra {
+    background: none repeat scroll 0 0 #fff;
+    border-color: -moz-use-text-color #ddd #ddd;
+    border-image: none;
+    border-right: 1px solid #ddd;
+    border-style: none solid solid;
+    border-width: 0 1px 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    height: 24px;
+    line-height: 20px;
+    margin-top: -1px;
+    position: relative;
+    text-align: right;
+}
+
+#select .mb .attr-extra div {
+    height: 24px;
+    line-height: 24px;
+    padding: 0 65px;
+    position: relative;
+}
+#select .mb .attr-extra b {
+    display: block;
+    height: 6px;
+    overflow: hidden;
+    position: absolute;
+    right: 52px;
+    top: 9px;
+    width: 9px;
+}
+#select .mb .attr-extra b.open {
+    background: url("../img/icon.png") no-repeat scroll -21px -16px;
+}
+#select .mb .attr-extra b.close {
+    background: url("../img/icon.png") no-repeat scroll -30px -16px;
+}
+
+
+/* 排序 */
+.fore1 {
+    height: 26px;
+    overflow: hidden;
+    padding: 3px 8px;
+    background: #f7f7f7;
+    border: 1px solid #eee;
+}
+
+.fore1 dl, .fore1 dt, .fore1 dd {
+    float: left;
+    line-height: 26px;
+}
+
+.fore1 .order dd, .fore1 .showstyle dd {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #cecbce;
+    height: 24px;
+    line-height: 24px;
+    margin-right: 5px;
+    overflow: hidden;
+}
+.fore1 .order .curr {
+    background: none repeat scroll 0 0 #176fcc;
+    border: 1px solid #176fcc;
+    font-weight: 700;
+}
+.fore1 .up, .fore1 .down {
+    position: relative;
+}
+.fore1 .order .curr a:link, .fore1 .order .curr a:visited {
+    color: #fff;
+}
+.fore1 .up a, .fore1 .down a {
+    padding-right: 20px;
+}
+.fore1 .order a {
+    display: block;
+    padding: 0 10px;
+}
+
+.fore1 .showstyle {
+    border-left: 1px solid #dbdbdb;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+.fore1 .showstyle a {
+    display: block;
+    padding: 0 10px 0 30px;
+}
+.fore1 .showstyle b {
+    overflow: hidden;
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    width: 17px;
+    height: 17px;
+}
+.fore1 .showstyle dd {
+    position: relative;
+}
+.fore1 .showstyle .active {
+    background: #176fcc;
+    border: 1px solid #176fcc;
+}
+.fore1 .showstyle .active a{
+    color: #fff;
+}
+.fore1 .showstyle .grid b {
+    background: url(../img/i-order-grid.png) no-repeat;
+}
+.fore1 .showstyle .grid.active b {
+    background: url(../img/i-order-grid-active.png) no-repeat;
+}
+.fore1 .showstyle .list b {
+    background: url(../img/i-order-list.png) no-repeat;
+}
+.fore1 .showstyle .list.active b {
+    background: url(../img/i-order-list-active.png) no-repeat;
+}
+.fore1 .search-form {
+    float: right;
+}
+.fore1 .search-form input[type="text"] {
+    background: url(../img/search.png) no-repeat left center #fff;
+    border: 1px solid #cecbce;
+    float: left;
+    height: 24px;
+    line-height: 17px;
+    padding-left: 20px;
+    padding-right: 3px;
+    width: 140px;
+}
+
+.fore1 .search-form input[type="submit"] {  
+    border: 1px solid #cecbce;
+    color: #333;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 2px 5px 1px;
+    background: #fff;
+}

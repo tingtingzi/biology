@@ -1,0 +1,183 @@
+.profile-reset {
+	overflow: hidden;
+	width: 490px;
+	margin: 0px auto;
+	padding-bottom: 40px;
+	padding-top: 20px;
+}
+.profile-reset a{
+	width: 160px;
+	text-align: center;
+	float: left;
+	display: inline-block;
+	border-top: 3px solid #c2c2c2;
+	padding-top: 5px;
+	margin-right: 2px;
+}
+.profile-reset a.active{
+	border-top: 3px solid #176fcc;
+	color: #176fcc;
+}
+
+
+
+.reset-second {
+	margin-left: 200px;
+}
+.control-group {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+input[type="text"], input[type="password"], select {
+	width: 308px;
+	padding: 0 5px;
+	height: 25px;
+	line-height: 25px;
+	border: none;
+	border: 1px solid #c8c8c8;
+} 
+label{
+	display: block;
+	color: #333;
+	margin-bottom: 4px;
+}
+.verified {
+	font-weight: bold;
+	font-size: 13px;
+}
+.send-pwd input[type="text"]{
+	width: 120px;
+}
+.send-pwd a {
+	border: 1px solid #c8c8c8;
+	padding: 5px 10px;
+	background: #f7f7f7;
+	display: inline-block;
+}
+.time {
+	font-weight: bold;
+	color: #176fcc;
+}
+a.primary-btn {
+	width: 140px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #c8c8c8;
+	background: #fff;
+	font-size: 14px;
+}
+input.primary-btn {
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #c8c8c8;
+	background: #fff;
+	cursor: pointer;
+	float: left;
+	display: inline;
+}
+.notice-error {	
+	display: inline-block;
+}
+.notice-error li{
+	background: #f2dede;
+	color: #b94a48;
+	border: 1px solid #eed3d7;
+	padding: 6px 10px;
+	border-radius: 5px;
+}
+.safe-box {
+	overflow: hidden;
+	padding-left: 175px;
+	margin-top: -15px;
+}
+.safelevel label{
+	color: #fff;
+	float: left;
+	margin-left: 5px;
+	padding: 0px 15px;
+}
+input.input-success {
+	background: url(../img/correct.png) no-repeat right center;
+	padding-right: 25px;
+	width: 100px;
+}
+
+
+.reset-first {
+	margin-left: 300px;
+}
+
+.reset-first .phone-box label {
+	width: 100%;
+	text-align: left;
+	clear: both;
+}
+input[name="code"], input[name="msg-code"]{
+	width: 80px;
+}
+input[name="phone"] {
+	width: 130px;
+}
+.phone {
+	height: 25px;
+	line-height: 25px;
+}
+.phone strong {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 5px;
+	color: #000;
+}
+.reset-email-link, .reset-email-link:hover {
+	color: #2c6fec;
+	text-decoration: underline;
+}
+.control-group .phone {
+	height: 25px;
+	line-height: 25px;
+}
+.control-group .phone strong {
+	font-weight: bold;
+	font-size: 18px;
+	margin: 0 5px;
+	color: #000;
+}
+.reset-first .code-box input[type="text"] {
+	float: left;
+	display: inline-block;
+}
+.reset-first .code-box img {
+	width: 130px;
+	height: 27px;
+	float: left;
+	display: inline;
+	margin: 0 20px;
+}	
+.reset-first .code-box a {
+	color: #000;
+}
+.reset-first .code-box a:hover {
+	text-decoration: underline;
+}
+.reset-first .error {
+	clear: both;
+	padding-top: 5px;
+}
+.reset-first .error li {
+    color: red;
+}
+
+.seccuess-box {
+	text-align: center;
+}
+.success {
+	background: url(../img/success-bg.png) no-repeat left center;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 50px;
+}

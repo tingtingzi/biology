@@ -1,0 +1,220 @@
+.infor {
+	float: left;
+	display: inline;
+}
+.basic-head, .head-preview {
+	width: 220px;
+	float: right;
+	display: inline;
+}
+.basic-head div {
+	background: #f4f4f4;
+	padding: 20px 0;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.basic-head div img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.basic-head div strong {
+	font-weight: bold;
+}
+.basic-head p {
+	text-align: center;
+}
+
+.basic-form {
+	margin-top: 20px;
+}
+.basic-form .control-group {
+    overflow: hidden;
+    padding: 10px 0;
+    clear: both;
+}
+.basic-form .label{
+    color: #333;
+    float: left;
+    height: 26px;
+    line-height: 26px;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+}
+.basic-form .field {
+    float: left;
+    height: 26px;
+    line-height: 26px;
+}
+.basic-form .selected-address {
+	float: left;
+	display: inline;
+	width: 120px;
+}
+.basic-form .textbox {
+    border: 1px solid #ccc;
+    font-family: Arial,"宋体",sans-serif;
+    height: 20px;
+    padding: 4px 3px;
+    width: 250px;
+}
+.basic-form select {
+    border: 1px solid #ccc;
+    height: 30px;
+    width: 80px;
+    float: left;
+    margin-right: 5px;
+}
+.basic-form .birthday .field span{
+	float: left;
+	margin-right: 5px;
+}
+.basic-form .error {
+    clear: both;
+    color: red;
+    margin-left: 70px;
+    padding-top: 10px;
+    width: 100%;
+}
+.control-group input[type="submit"] {
+    background: #fafafa;
+    border: 1px solid #c8c8c8;
+    color: #555555;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    padding: 4px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 110px;
+}
+.update-email {
+	color: #176FCC;
+}
+.profile-title {
+    margin-bottom: 30px;
+}
+.profile-title a {
+    margin-right: 5px;
+}
+.profile-title a.active {
+    border-bottom: 1px solid #176fcc;
+    color: #176fcc;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
+
+.profession-nav li,
+.profession-content li{
+	float: left;
+	padding-bottom: 5px;
+
+}
+.profession-content li {
+	display: none;
+}
+.profession-nav li a{
+	padding-left: 20px;
+	margin: 0 10px;
+	display: block;
+}
+
+.profession-nav li.active {
+	background: url(../img/address-active.png) no-repeat bottom center;
+}
+.profession-content li.active,
+.profession-nav li.active {
+	display: block;	
+}
+.profession-nav .company a {
+	background: url(../img/address-company.png) no-repeat left center;
+}
+.profession-nav .school a {
+	background: url(../img/address-school-active.png) no-repeat left center;
+}
+.profession-nav .hospital a {
+	background: url(../img/address-hospital.png) no-repeat left center;
+}
+
+.pop-box {
+    width: 800px;
+    height: 480px;
+    border-radius: 5px;
+    box-shadow: 0 -2px 10px #d2d2d2;
+    border: 1px solid #b4b2b2;
+    background: #fff;
+}
+.pop-box .pop-title {
+    background: #176fcc;
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 13px;
+}
+.pop-box .pop-title i {
+    display: block;
+    float: left;
+    width:0; 
+    height:0; 
+    margin-right: 5px;
+    margin-top: 5px;
+    border-left:5px solid transparent;
+    border-right:5px solid transparent;
+    border-top:5px solid #ed145b;
+}
+.pop-box .pop-close {
+    float: right;
+    display: inline;
+}
+.city {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.city a {
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    color: #176fcc;
+    display: inline-block;
+}
+.city a.active {
+    background: #176fcc;
+    color: #fff;
+}
+.search-school-box {
+    border: 1px solid #ccc;
+}
+.search-school-box form {
+    border-bottom: 1px solid #ccc;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 20px;
+}
+.search-school-box form input[type="text"] {
+    border: 1px solid #ccc;
+    height: 25px;
+    line-height: 25px;
+}
+.search-school-box form input[type="submit"] {
+    background: #176fcc;
+    border: none;
+    padding: 2px 10px;
+    color: #fff;
+} 
+.search-result ul li {
+    width: 250px;
+    float: left;
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 10px;
+}
+.search-result ul li a {
+    color: #176fcc;
+}
+
+
+.pop-content {
+    padding: 10px;
+}
