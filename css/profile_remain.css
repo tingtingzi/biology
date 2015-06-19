@@ -1,0 +1,68 @@
+table {	
+    width: 100%;
+    border-collapse:collapse;
+}
+table tr {
+	border-left: 1px solid #f2f2f2;
+	border-right: 1px solid #f2f2f2;
+}
+table th{
+	background: #e1e1e1;
+	height: 30px;
+	line-height: 30px;
+}
+table tr td{
+    padding: 10px;
+    text-align: center;
+    border-right:1px solid #f2f2f2;
+    border-bottom:1px solid #f2f2f2;	
+}
+
+
+.remain {
+	margin-bottom: 20px;
+}
+.remain strong{
+	font-weight: bold;
+	font-size: 14px;
+	color: #e30938;
+	margin: 0 2px;
+}
+.remain span {
+	margin-right: 15px;
+}
+.remain .primary-red-btn {
+    background: none repeat scroll 0 0 #e30938;
+    color: #fff;
+    display: inline;
+    float: right;
+    font-size: 14px;
+    padding: 9px 20px;
+}
+.remain a {
+	float: right;
+	margin-left: 20px;
+}
+.remain .recharge-detail {
+	color: #176fcc;
+}
+.remain .recharge-btn {
+	background: #eff9e8;
+    border: 1px solid #bed6af;
+    margin-top: -5px;
+    padding: 5px 20px;
+}
+
+
+.profile-title {
+    margin-bottom: 30px;
+}
+.profile-title a {
+    margin-right: 5px;
+}
+.profile-title a.active {
+    border-bottom: 1px solid #176fcc;
+    color: #176fcc;
+    font-weight: bold;
+    padding-bottom: 2px;
+}
