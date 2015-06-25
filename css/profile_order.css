@@ -1,0 +1,249 @@
+/* 推荐商品 */
+.recommend {
+	width:1198px;
+	overflow: hidden;
+}
+.recommend ul {
+	width: 1210px;
+}
+.recommend .list-h li {
+    padding: 0;
+    position: relative;
+    width: 197px;
+    height: 235px;
+    float: left;
+}
+
+.recommend .list-h li .lh-wrap {
+    background: none repeat scroll 0 0 #fff;
+    border: 0 none;
+    left: 0;
+    padding: 1px 11px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.recommend .img-center {
+    height: 100px;
+    width: 180px;
+}
+.recommend .img-center img {
+    max-height: 100px;
+    max-width: 180px;
+    vertical-align: middle;
+}
+.recommend .p-name {
+    height: 3em;
+    word-wrap: break-word;
+}
+.recommend .p-name a:hover {
+	color: #176fcc;
+	text-decoration: underline;
+}
+.recommend .p-name span {
+	color: #176fcc;
+}
+.recommend .extra a{ 
+	color: #176fcc;
+    display: block;
+    margin: 5px 0;
+}
+.recommend .add-cart {
+    background: #f7f7f7;
+    border: 1px solid #ccc;
+    display: block;
+    margin: 5px auto 0;
+    padding: 3px 0;
+    text-align: center;
+    width: 80px;
+}
+.recommend .p-name, .recommend .p-detail {
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.recommend .p-img, .recommend .p-name, .recommend .p-price {
+    overflow: hidden;
+}
+.recommend .price strong {
+	color: #d20101;
+	font-weight: bold;
+} 
+
+
+.order {
+    margin-top: 20px;
+}
+.commen-title .recover {
+    float: right;
+    display: inline-block;
+    color: #176fcc;
+} 
+.commen-title .service {    
+    background: #d20101;
+    color: #fff;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+.notice .red {
+    color: #d20101;
+}
+.search {
+    margin-top: 20px;
+}
+.search strong {    
+    color: #d20101;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding-right: 10px;
+    background: url(../img/down.png) no-repeat right 3px;
+}
+.search form {
+    float: right;
+}
+.search input[type="text"] {
+    border: 1px solid #ccc;
+    line-height: 25px;
+    padding: 0 5px;
+    width: 200px;
+
+}
+.search input[type="submit"] {
+    border: 1px solid #ccc;
+    margin-left: 5px;
+    padding: 1px 10px;
+}
+
+
+
+.bag {
+    border: 1px solid #eee;
+    margin-top: 20px;
+}
+.order-number {
+    height: 30px;
+    line-height: 30px;
+    background: #f5f5f5;
+    padding-left: 10px;
+}
+.order-number span {
+    margin-right: 30px;
+}
+.order-number strong {
+    color: #176fcc;
+}
+.bag .detail-nav div {
+    font-weight: bold;
+    color: #333;
+}
+.bag .detail-nav {
+    background: #e7e7e7;
+    border: 1px solid #ddd;
+    height: 35px;
+    line-height: 35px;
+}
+.bag .detail-nav span {
+    float: left;
+    display: inline-block;
+}
+.bag .detail-nav select {
+    border: 1px solid #ccc;
+}
+.bag .goods, 
+.bag .buyer,
+.bag .price,
+.bag .time, 
+.bag .status,
+.bag .func {
+    float: left;
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+.bag .goods {
+    width: 320px;
+}
+.bag .buyer{
+    width: 100px;
+}
+.bag .price {
+    width: 100px;
+    text-align: center;
+}
+.bag .time {
+    width: 100px;
+}
+.bag .status {
+    width: 100px;
+}
+.bag .format.func,
+.bag .func {
+    width: 100px;
+    border-right: none;
+}
+#goods .detail{
+    overflow: hidden;
+    padding: 0px 15px;
+}
+.detail .format {
+    border-right: 1px solid #eee;
+    height: 60px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+}
+#goods .goods-img {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+#goods .goods-img .img-center {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    text-align: center;
+}
+#goods .goods-img .img-center img {
+    max-width: 50px;
+    max-height: 50px;
+    border: 1px solid #ccc; 
+}
+#goods .goods-detail .number {
+    margin-left: 60px;
+    margin-top: 5px;
+}
+#goods .goods {
+    text-align: left;
+}
+#goods .goods .name {
+    height: 33px;
+    line-height: 16px;
+    overflow: hidden;
+}
+#goods .goods .name a {
+    color: #176fcc;
+}
+#goods .goods .name a:hover {
+    text-decoration: underline;
+}
+#goods .goods .try span{
+    color: #fff;
+    background: #888;
+    padding: 2px 10px;
+}
+#goods .func a {
+    color: #176fcc;
+}
+#goods .func .add-cart-btn {
+    background: url(../img/add-cart.png) no-repeat center left #eee;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    color: #999;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 2px 5px 2px 20px;
+}

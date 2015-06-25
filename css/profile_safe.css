@@ -1,0 +1,158 @@
+.safe-item-lists {
+	width: 900px;
+	margin: 20px auto;
+}
+
+.warn-box {
+    background: none repeat scroll 0 0 #fffdee;
+    padding: 5px;
+}
+.u-safe .safe-rank01 {
+    background-position: 0 0px;
+}
+.u-safe .safe-rank02 {
+    background-position: 0 -15px;
+}
+.u-safe .safe-rank03 {
+    background-position: 0 -30px;
+}
+.u-safe .safe-rank04 {
+    background-position: 0 -45px;
+}
+.u-safe .safe-rank05 {
+    background-position: 0 -60px;
+}
+.u-safe .safe-rank06 {
+    background-position: 0 -75px;
+}
+.u-safe .safe-rank01, 
+.u-safe .safe-rank02, 
+.u-safe .safe-rank03, 
+.u-safe .safe-rank04, 
+.u-safe .safe-rank05, 
+.u-safe .safe-rank06 {
+    background: url("../img/safe-rank2014.png") no-repeat;
+    display: inline-block;
+    font-size: 0;
+    height: 14px;
+    line-height: 0;
+    margin-right: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 68px;
+}
+
+.u-safe .rank-text {
+    font-weight: 400;
+    margin-right: 5px;
+}
+.ftx02, .ftx-02 {
+    color: #71b247;
+}
+.ftx04, .ftx-04 {
+    color: #ff8a15;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.safe-item {
+    border-bottom: 1px solid #e6e6e6;
+    display: block;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.safe-item .fore1 {
+    font-family: 微软雅黑;
+    font-size: 18px;
+    padding-left: 25px;
+    text-align: left;
+    width: 175px;
+}
+
+
+.safe-item .fore1 .icon-01, 
+#flexsuc .icon-01 {
+    background-position: -64px 0;
+}
+.safe-item .fore1 s, 
+.icon-01 {
+    background: url("../img/icon-msg2013.png") no-repeat;
+    display: inline-block;
+    height: 33px;
+    margin-right: 33px;
+    vertical-align: middle;
+    width: 32px;
+}
+.safe-item .fore1 strong {
+    margin-right: 5px;
+}
+.safe-item .fore2 {
+    border-left: 1px solid #e6e6e6;
+    padding-left: 15px;
+    width: 500px;
+}
+.safe-item .fore1, 
+.safe-item .fore2, 
+.safe-item .fore3 {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+.safe-item .fore3 {
+    text-align: center;
+    width: 140px;
+}
+.ftx05, .ftx-05 {
+	color: #176fcc;
+}
+
+
+.icon-id01 {
+    background-position: 0 0;
+}
+.icon-id01d {
+    background-position: 0 -15px;
+}
+.icon-id02 {
+    background-position: -15px 0;
+}
+.icon-id02d {
+    background-position: -15px -15px;
+}
+.icon-id01, 
+.icon-id01d, 
+.icon-id02, 
+.icon-id02d {
+    background: url("../img/icon-id20131211.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: inline-block;
+    font-size: 0;
+    height: 14px;
+    line-height: 100px;
+    overflow: hidden;
+    width: 14px;
+}
+
+.btn-5, .btn-6, .btn-7, .btn-8 {
+    background-color: #f5fbef;
+    background-image: linear-gradient(to top, #f5fbef 0px, #eaf6e2 100%);
+    border: 1px solid #bfd6af;
+    border-radius: 2px;
+    color: #323333;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 2px 14px 3px;
+}
+
+.safe-tips {
+	margin-top: 20px;
+}
+.safe-tips strong {
+    color: #666;
+    font-family: "宋体";
+    line-height: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}

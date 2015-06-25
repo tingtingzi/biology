@@ -1,0 +1,249 @@
+body {
+    background: #fff;
+}
+
+.crumb {
+    overflow: hidden;
+    padding: 10px 5px;
+}
+.crumb h2 {
+    font-weight: bold;
+    color: #000;
+    font-size: 15px;
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* 左侧导航 */
+.left-extra {
+    width: 170px;
+    float: left;
+    display: inline-block;
+}
+#refilter .ms {
+    background: #fbfbfb;
+    height: 31px;
+    line-height: 31px;
+    padding-left: 8px;
+}
+#refilter .ms h2, #refilter .ms h2 a {
+    color: #333;
+    font-family: 微软雅黑;
+    font-size: 15px;
+}
+#refilter .ms h2 {
+    font-weight: 400;
+}
+
+#refilter .item {
+    background: none repeat scroll 0 0 #fff;
+    position: relative;
+}
+#refilter .item h3 {
+    background: #fbfbfb;
+    border-top: 1px solid #eee;
+    cursor: pointer;
+    font: 400 14px/30px 微软雅黑;
+    height: 30px;
+    overflow: hidden;
+    padding: 0 6px 0 36px;
+}
+#refilter .item b {
+    background: url(../img/i-close.png) left center no-repeat;
+    cursor: pointer;
+    height: 16px;
+    left: 10px;
+    margin-top: 1px;
+    overflow: hidden;
+    position: absolute;
+    top: 7px;
+    width: 16px;
+}
+#refilter .item ul {
+    border-top: 1px solid #ddd;
+    display: none;
+    overflow: hidden;
+    padding: 4px 0 4px 34px;
+}
+#refilter .hide {
+    display: none;
+}
+#refilter .hover ul {
+    display: block;
+}
+#refilter .item li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding: 0 4px 0 0;
+}
+#refilter .item li a {
+    padding: 0 2px 2px;
+}
+#refilter .extra {
+    background: #fbfbfb;
+    border-top: 1px solid #eee;
+    height: 30px;
+    line-height: 30px;
+    margin-top: -1px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+#refilter .more {
+    color: #333;
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-align: right;
+}
+#refilter .more span {
+    cursor: pointer;
+    display: inline-block;
+    padding-right: 20px;
+}
+#refilter .more b {
+    cursor: pointer;
+    position: absolute;
+    width: 9px;
+    height: 8px;
+    top: 10px;
+    right: 5px;
+    margin-top: 1px;
+    overflow: hidden;
+}
+#refilter .more b.open {
+    background: url(../img/icon.png) -21px -16px no-repeat; 
+}
+#refilter .more b.close {
+    background: url(../img/icon.png) -30px -16px no-repeat; 
+}
+#refilter .hover b {
+    background: url(../img/i-open.png) left center no-repeat;
+}
+
+
+
+/* 没有搜索到商品 */
+.not-find {
+    margin: 40px 0 40px;
+}
+.not-find .tip {
+    border: 1px solid #edd28b;
+    background: #fffdee;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 20px;
+}
+.not-find .tip span {
+    color: #176fcc;
+}
+.not-find .notice {
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+.not-find .notice span {
+    color: #176fcc;
+}
+.not-find .notice .blue {
+    font-size: 24px;
+    color: #56a4f6;
+    margin: 40px 0 5px;
+    font-family: 'Microsoft YaHei';
+}
+.not-find .notice .blue-deep {
+    font-size: 24px;
+    color: #2076d2;
+    margin-bottom: 25px;
+    font-family: 'Microsoft YaHei';
+}
+.not-find .notice a {
+    background: #e60012;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+}
+
+
+.need-layer-box {
+    width: 1198px;
+    overflow: hidden;
+}
+.need-layer-box ul {
+    width: 1220px;
+}
+.nav-box {
+    font-weight: bold;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    padding-left: 20px;
+    border: 1px solid #eee;
+}
+.nav-box .title {
+    float: left;
+    display: inline-block;
+}
+.nav-box .change {
+    float: right;
+    display: inline-block;
+    margin-right: 20px;
+    padding-right: 15px;
+    font-weight: normal;
+    color: #888;
+    font-size: 13px;
+    background: url(../img/change.png) no-repeat right center;
+}
+
+.layer-box {
+    overflow: hidden;
+    background: #fff;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+}
+.layer-box li {
+    float: left;
+    display: inline-block;
+    width: 170px;
+    height: 160px;
+    padding: 10px 15px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+.layer-box .layer .img-center {
+    width: 170px;
+    height: 100px;
+}
+.layer-box .layer .img-center img {
+    max-width: 170px;
+    max-height: 100px;
+    vertical-align: middle;
+}
+.layer-box .layer .p-name a:hover {
+    color: #3686db;
+    text-decoration: underline;
+}
+
+
+/* 搜索到类似文字的商品（纠错） */
+.rectify {
+    border: 1px solid #edd28b;
+    background: #fffdee;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 13px 15px;  
+    margin-bottom: 10px;
+}
+.rectify span .blue {
+    color: #176fcc;
+    font-weight: bold;
+}
+.rectify span .red {
+    color: #e60012;
+    font-weight: bold;
+}

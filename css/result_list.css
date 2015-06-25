@@ -1,0 +1,149 @@
+.result-list-text .item{
+    margin-bottom: 30px;
+}
+table.list-text {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    border-collapse:collapse;
+    margin-top: 5px;
+}
+table.list-text tr {
+    
+}
+table.list-text tr th {
+    background: #176fcc;
+    border-right: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    height: 25px;
+    vertical-align: middle;
+}
+table.list-text tr td{
+    padding: 5px;
+    text-align: center;
+    word-break: unset;
+    text-align: center;
+}
+
+table.list-text tr.gray-bg {
+    background: #f7f7f7;              
+}
+table.list-text tr.white-bg {
+    background: #fff;
+}
+table.list-text tr td .name{ 
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+table.list-text tr td .name:hover{
+    color: #176fcc;
+    text-decoration: underline;
+}
+.highlight {
+    background: #888;
+    color: #fff;
+    padding: 3px 5px;
+}
+.compare a{
+    color: #005aa0;
+    border: 1px solid #cecbce;
+    padding: 3px;
+    background: #fff;
+    margin-bottom: 3px;
+    display: block;
+}
+.compare .btn-compare-s i{
+    background: url("../img/i-select.png") no-repeat left center;
+    padding-left: 18px;   
+}
+.compare .btn-compare-s.btn-compare-s-active i{
+    background: url("../img/i-selected.png") no-repeat left center;
+}
+
+/* 推荐 */
+.recommend {
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+}
+.recommend .title {
+    background: #f7f7f7;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+.recommend .title strong {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+}
+.recommend .title strong.title-activity {
+    width: 200px;
+    float: right;
+    display: inline-block;
+}
+.recommend .hot-buy li {
+    float: left;
+    display: inline-block;
+    margin: 10px;
+    width: 240px;
+}
+.recommend .hot-buy .g-img {
+    float: left;
+    display: inline-block;
+    margin-right: 10px;
+}
+.recommend .hot-buy .img-center {
+    width: 90px;
+    height: 90px;
+    vertical-align: middle;
+}
+.recommend .hot-buy .img-center img {
+    max-width: 90px;
+    max-height: 90px;
+    vertical-align: middle;
+}
+.recommend .hot-buy .g-name strong {
+    color: #d20101;
+    font-weight: bold;
+    float: left;
+    display: inline-block;
+}
+.recommend .hot-buy .g-name .zero {
+    color: #d20101;
+    font-weight: bold;
+    font-size: 12px;
+}
+.recommend .hot-buy .buy-btn {
+    background: #d20101;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    margin-top: 20px;
+}
+.recommend .activity {
+    width: 215px;
+    display: inline-block;
+    float: right;
+}
+.recommend .activity li {
+    background: url("../img/disc.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    margin-left: 5px;
+    margin-top: 10px;
+    padding-left: 15px;
+}
+.recommend .activity li a {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 210px;
+}
+.recommend .activity li a:hover {
+    text-decoration: underline;
+    color: #176fcc;
+};

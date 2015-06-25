@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<title>登录-生物商城</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/auth.css">
+
+    <script type="text/javascript" src="../js/vender/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="../js/auth.js"></script>
+</head>
+
+<body>
+	<div id="header2" class="clearfix">
+		<div>			
+			<a href=""><img src="../img/trash/product.png" /></a>
+			<span>欢迎登录</span>
+		</div>
+	</div>
+
+	<div id="content2">
+		<div class="login-box clearfix">
+			<div class="ad">
+				<a href="" class="img-center">
+					<img src="../img/trash/head.png" />
+				</a>
+			</div>
+			<div class="login-content">
+				<form class="login-form clearfix">
+					<div class="control-group">
+						<label>邮箱/用户名/已验证手机</label>
+						<input type="text" name="username" />
+						<ul class="error">
+							<li>邮箱格式不正确</li>
+						</ul>
+					</div>
+					<div class="control-group">
+						<label>密码</label>
+						<input type="password" name="pwd" />
+						<ul class="error">
+							<li></li>
+						</ul>
+					</div>
+					<div class="control-group remember-box">
+						<input type="checkbox" checked="checked" id="remember-pwd" />
+						<label for="remember-pwd">自动登录</label>
+						<a href="">忘记密码？</a>
+					</div>	
+					<div class="control-group code-box">
+						<label>验证码</label>
+						<input type="text" name="code" />
+						<img src="../img/trash/head.png" />
+						<p>
+							<span>看不清?</br></span>
+							<a class="change-code" href="">换一张</a>
+						</p>	
+						<ul class="error">
+							<li></li>
+						</ul>					
+					</div>
+					<div class="control-group">
+						<input type="submit" class="primary-btn" value="登录" />
+						<a class="login-btn primary-btn" href="">免费注册</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+
+	<div id="footer2">
+		<div class="footer copy">
+			<p>
+				<a href="">关于我们</a>
+				<a href="">联系我们</a>
+				<a href="">加入我们</a>
+				<a href="">商城入驻</a>
+				<a href="">广告媒体</a>
+				<a href="">服务报价</a>
+				<a href="">友情链接</a>
+				<a href="">法律声明</a>
+			</p>
+			<p>&copy;2014 第一生物商城 版权所有，并保留所有权利。</p>					
+			<p>Tel: 400-000-1234</p>					
+			<p>ICP备案证书号: 苏ICP备12345678</p>	
+		</div>
+	</div>
+</body>
+
+	<script type="text/template" id="login-template">
+		<div class="login-pop">
+			<p class="title">
+				请登录您的账号
+				<a href="javascript:;" class="pop-close">×</a>
+			</p>			
+			<div class="login">
+				<form class="login-form clearfix">
+					<div class="control-group">
+						<label>邮箱/用户名/已验证手机</label>
+						<input type="text" name="username" />
+						<ul class="error">
+							<li>邮箱格式不正确</li>
+						</ul>
+					</div>
+					<div class="control-group">
+						<label>密码</label>
+						<input type="password" name="pwd" />
+					</div>
+					<div class="control-group code-box">
+						<label>验证码</label>
+						<input type="text" name="code" />
+						<img src="../img/trash/head.png" />
+						<p>
+							<span>看不清?</br></span>
+							<a class="change-code" href="">换一张</a>
+						</p>						
+					</div>
+					<div class="control-group remember-box">
+						<input type="checkbox" checked="checked" id="remember-pwd" />
+						<label for="remember-pwd">自动登录</label>
+						<a href="">忘记密码？</a>
+					</div>	
+					<div class="control-group">
+						<input type="submit" class="primary-btn" value="登录" />
+						<a class="login-btn primary-btn" href="">免费注册</a>
+					</div>
+				</form>
+				<div class="coope">
+					<p class="clearfix"><span>使用合作网站账号登录</span><i></i></p>
+					<a class="coope-qq" href="">QQ</a>
+					<a class="coope-sina" href="">新浪微博</a>
+				</div>
+			</div>
+		</div>
+	</script>
+</html>
